@@ -1,0 +1,23 @@
+{
+  "name": "fakeghost",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ghost.js",
+  "dependencies": {
+    "marked": "^0.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sont85/fakeGhost.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sont85/fakeGhost/issues"
+  },
+  "homepage": "https://github.com/sont85/fakeGhost#readme"
+}
