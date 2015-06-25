@@ -4,7 +4,7 @@ var marked = require('marked'),
 
 // console.log(marked('I am using __markdown__.'));
 
-http.createServer(responseHandler).listen(7777);
+http.createServer(responseHandler).listen(process.env.PORT);
 
 function responseHandler(req, res) {
   var markedBinding = ""

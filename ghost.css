@@ -1,0 +1,8 @@
+  body {
+    background: #AAAAAA;
+  }
+  #outputBox {
+    border: 2px solid black;
+    height: 450px;
+    background: white;
+  }
