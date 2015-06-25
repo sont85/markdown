@@ -4,6 +4,18 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular.min.js"></script>
+  <style>
+    body {
+    background: #AAAAAA;
+  }
+  #outputBox {
+    border: 2px solid black;
+    height: 450px;
+    width: 400px;
+    background: white;
+  }
+
+  </style>
   <script>      
     var app = angular.module("ghost", []);
     app.controller("mainCtrl", function($scope, $http, $sce) {
@@ -16,14 +28,13 @@
       };
     });
   </script>
-  <link rel="stylesheet" src="ghost.css"></link>
 </head>
 <body ng-app="ghost" ng-controller="mainCtrl">
   <div class="container">
     <h2 class="text-center">Ghost Mark Down</h2>
     <div class="row">
       <div class="col-xs-6">
-        <textarea id="inputBox" rows="22" cols="75" ng-model="input" ng-keyup="markWords(input)"></textarea>
+        <textarea id="inputBox" rows="22" cols="60" ng-model="input" ng-keyup="markWords(input)"></textarea>
       </div>
       <div class="col-xs-6" id="outputBox" ng-bind-html="data">
       </div>
