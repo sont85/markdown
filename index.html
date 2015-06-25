@@ -16,17 +16,18 @@
       };
     });
   </script>
+  <link rel="stylesheet" src="ghost.css"></link>
 </head>
 <body ng-app="ghost" ng-controller="mainCtrl">
-  <div class="row">
-    <div class="col-xs-6">
-      <textarea id="inputBox" rows="75" cols="75" ng-model="input" ng-keyup="markWords(input)"></textarea>
+  <div class="container">
+    <h2 class="text-center">Ghost Mark Down</h2>
+    <div class="row">
+      <div class="col-xs-6">
+        <textarea id="inputBox" rows="22" cols="75" ng-model="input" ng-keyup="markWords(input)"></textarea>
+      </div>
+      <div class="col-xs-6" id="outputBox" ng-bind-html="data">
+      </div>
     </div>
-    <div class="col-xs-6">
-      <div id="outputBox" ng-bind-html="data"></div>
-    </div>
-
   </div>
-
 </body>
 </html>
